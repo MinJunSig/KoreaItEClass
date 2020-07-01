@@ -1,0 +1,586 @@
+@charset "utf-8";
+@import url(common.css);
+
+/*
+display
+position
+overflow
+float
+width, height
+margin
+padding
+border
+background
+font
+z-index
+etc
+*/
+
+/* customer */
+    /* common */
+        .page_wrap {
+            width: 100%;
+            text-align: center;
+        }
+        .page_wrap .page_list {
+            display: inline-block;
+        }
+        .page_wrap .page_list li { 
+            float: left;
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+        .page_wrap .page_list li a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: #555;
+            line-height: 30px;
+            text-align: center;
+        }
+        .page_wrap .page_list li a.on {
+            /* background-color: #efefef; */
+            color: #f7b618;
+            font-weight: bold;
+        }
+        .page_wrap .page_list li a:hover {
+            background-color: #efefef;
+            color: #f7b618;
+            font-weight: bold;
+        }
+
+    /* common end */
+
+    /* notice */
+        .sub_content .notice_area { 
+            box-sizing: border-box; 
+            height: 100%; 
+            padding-top: 60px; 
+        }
+        .sub_content .notice_area .minisrch_form { 
+            display: flex; 
+            float: right; 
+            margin-bottom: 40px; 
+        }
+        .sub_content .notice_area .minisrch_form select { 
+            box-sizing: border-box; 
+            width: 80px; height: 40px; 
+            padding-left: 10px; 
+            border: 1px solid #bbb; 
+            font-weight: bold; 
+            cursor: pointer; 
+        }
+        .sub_content .notice_area .minisrch_form input[type="text"] { 
+            box-sizing: border-box; 
+            width: 250px; height: 40px; 
+            padding-left: 20px; 
+            border: 1px solid #bbb; 
+        }
+        .sub_content .notice_area .minisrch_form input[type="button"] {
+            box-sizing: border-box; 
+            width: 100px; height: 40px; 
+            border: none; 
+            background-color: #ffd204; 
+            font-weight: bold; 
+        }
+        .sub_content .notice_area .minisrch_form input[type="button"]:hover {
+            background-color: #f7b618; 
+            cursor: pointer; 
+        }
+        .sub_content .notice_area .notice_list { 
+            width: 100%; 
+            padding-top: 40px; 
+        }
+        .sub_content .notice_area .notice_list tr th { 
+            box-sizing: border-box; 
+            height: 60px; 
+            border-top: 2px solid #333; 
+            background-color: #f8f8f8; 
+            font-size: 17px; 
+            font-weight: 400;
+        }
+        .sub_content .notice_area .notice_list tr td { 
+            box-sizing: border-box; 
+            height: 60px; 
+            border-bottom: 1px solid #ddd; 
+            text-align: center; 
+        }
+        .sub_content .notice_area .notice_list tr td:nth-child(2) { 
+            text-align: left; 
+            padding-left: 20px; 
+        }
+        .sub_content .notice_area .notice_list tr td:nth-child(4), .sub_content .notice_area .notice_list tr td:last-child { 
+            letter-spacing: 0px; 
+        }
+        .sub_content .notice_area .notice_list tr td a { 
+            color: #444; 
+        }
+    /* notice end */
+
+    /* notice_in */
+        .sub_content .notice_area .title_table { height: 130px; }
+        .sub_content .notice_area .title_table tr th { 
+            height: 35px; 
+            font-size: 16px; 
+            font-weight: bold; 
+        }
+        .sub_content .notice_area .title_table tr td { 
+            border-top: 1px solid #ddd; 
+        }
+        .sub_content .notice_area .title_table tr td:first-child { 
+            text-align: center; 
+        }
+        .sub_content .notice_area .title_table tr td:nth-child(2) { 
+            padding: 0; 
+            text-align: center; 
+        }
+        .sub_content .notice_area .notice_content { 
+            height: 100%; 
+            padding: 20px; 
+            border-bottom: 1px solid #ddd; 
+        }
+        .sub_content .notice_area .notice_content p { 
+            padding: 5px 0; 
+            letter-spacing: -1px; 
+        }
+        .sub_content .notice_area .notice_content div { 
+            text-align: center; 
+        }
+        .sub_content .notice_area .notice_content img { 
+            margin: 10px auto; 
+        }
+    /* notice_in end */
+
+    /* FAQ */
+        .faq_on p {
+            color: #f7b62e;
+        }
+        .faq_on p::after {
+            
+            font-size: 35px !important;
+            color: #f7b62e !important;
+            content: "-" !important;
+        }
+        .sub_content .faq_area { 
+            height: 100%;
+        }
+        .sub_content .faq_area .faq_list {
+            width: 100%;
+            margin-top: 70px;
+            border-top: 2px solid #333;
+        }
+        .sub_content .faq_area .faq_list dt {
+            padding: 35px 40px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .sub_content .faq_area .faq_list dt p {
+            font-size: 18px;
+        }
+        .sub_content .faq_area .faq_list dt p::before {
+            margin-right: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: #f7b62e;
+            content: "Q";
+        }
+        .sub_content .faq_area .faq_list dt p::after {
+            float: right;
+            font-size: 30px;
+            font-weight: bold;
+            color: #555;
+            content: "+";
+            line-height: 20px;
+        }
+        .sub_content .faq_area .faq_list dd {
+            padding: 40px;
+            border-bottom: 1px solid #ddd;
+            background-color: #F8F9FB;
+            vertical-align: text-top;
+        }
+        .sub_content .faq_area .faq_list dd .big {
+            box-sizing: border-box;
+            display: inline;
+            margin-right: 20px;
+            font-size: 26px;
+            font-weight: bold; 
+            vertical-align: top;
+        }
+        .sub_content .faq_area .faq_list dd .a_box {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 96%;
+        }
+        .sub_content .faq_area .faq_list dd .a_box p {
+            color: #555;
+            font-size: 16px;
+            letter-spacing: -1px;
+            line-height: 24px;
+        }
+    /* FAQ end */
+
+    /* review */
+        .review_area .btn_wrap {
+            margin-top: 40px;
+            text-align: right;
+        }
+        .review_area .review_list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .review_area .review_list .review_content {
+            position: relative;
+            width: 550px;
+            height: 350px;
+            margin: 40px 0;
+            border: 2px solid #ddd;
+            border-radius: 20px 0 20px 0;
+            box-shadow: 2px 5px 10px #ddd;
+            color: #555;
+        }
+        .review_area .review_list .review_content .name {
+            position: absolute;
+            top: 25px;
+            left: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .name::before {
+            content: '작성자 :';
+            margin-right: 8px;
+            font-size: 14px;
+            color: #999;
+        }
+        .review_area .review_list .review_content .root {
+            position: absolute;
+            top: 25px;
+            left: 180px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .root::before {
+            content: '구간 :';
+            margin-right: 8px;
+            font-size: 14px;
+            color: #999;
+        }
+        .review_area .review_list .review_content .use_date {
+            position: absolute;
+            top: 25px;
+            right: 30px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .use_date::before {
+            content: '이용 날짜 :';
+            margin-right: 8px;
+            font-size: 14px;
+            color: #999;
+        }
+        .review_area .review_list .review_content .star {
+            position: absolute;
+            top: 65px;
+            left: 16px;
+            width: 200px;
+            height: 40px;
+            background: url(../images/ico/star.png) repeat-x;
+            background-size: 40px;
+            text-indent: -9999px;
+        }
+        .review_area .review_list .review_content .star.half { width: 20px; }
+        .review_area .review_list .review_content .star.one { width: 40px; }
+        .review_area .review_list .review_content .star.one_half { width: 60px; }
+        .review_area .review_list .review_content .star.two { width: 80px; }
+        .review_area .review_list .review_content .star.two_half { width: 100px; }
+        .review_area .review_list .review_content .star.three { width: 120px; }
+        .review_area .review_list .review_content .star.three_half { width: 140px; }
+        .review_area .review_list .review_content .star.four { width: 160px; }
+        .review_area .review_list .review_content .star.four_half { width: 180px; }
+        .review_area .review_list .review_content .star.five { width: 200px; }
+        .review_area .review_list .review_content .title {
+            position: absolute;
+            top: 130px;
+            left: 20px;
+            width: 355px;
+            height: 21px;
+            font-size: 20px;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .review_area .review_list .review_content .write_date {
+            position: absolute;
+            top: 130px;
+            right: 30px;
+            color: #999;
+            vertical-align: top;
+        }
+        .review_area .review_list .review_content .write_date::before {
+            content: '작성일 : ';
+            margin-right: 8px;
+            vertical-align: top;
+        }
+        .review_area .review_list .review_content .contents {
+            position: absolute;
+            top: 180px;
+            left: 20px;
+            width: 510px;
+            height: 140px;
+            overflow: auto;
+            line-height: 20px;
+            letter-spacing: -1px;
+        }
+    /* review end */
+
+    /* review_write */
+        .ck-editor__editable_inline {
+            min-height: 500px;
+        }
+        .review_area .write_wrap h3 {
+            margin-top: 100px;
+        }
+        .review_area .write_wrap form {
+            position: relative;
+            width: 100%;
+        }
+        .review_area .write_wrap .star_list {
+            display: inline-block;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        .review_area .write_wrap .star_list li {
+            float: left;
+            box-sizing: border-box;
+            width: fit-content;
+            height: 40px;
+            text-indent: -9999px;
+        }
+        .review_area .write_wrap .star_list li:nth-child(even) {
+            margin-right: 20px;
+        }
+        .review_area .write_wrap .star_list a {
+            display: block;
+            width: 20px;
+            height: 40px;
+        }
+        .review_area .write_wrap .star_list li:nth-child(even) a { /* 짝수 */
+            width: 20px;
+            background: url(../images/ico/gray_star.png) right no-repeat;
+            background-size: 40px;
+        }
+        .review_area .write_wrap .star_list li:nth-child(even) a.on, .review_area .write_wrap .star_list li:nth-child(even) a.click {
+            width: 20px;
+            background: url(../images/ico/star.png) right no-repeat;
+            background-size: 40px;
+            background-color: transparent !important;
+        }
+        .review_area .write_wrap .star_list li:nth-child(odd) a {
+            background: url(../images/ico/gray_star.png) left no-repeat;
+            background-size: 40px;
+        }
+        .review_area .write_wrap .star_list li:nth-child(odd) a.on, .review_area .write_wrap .star_list li:nth-child(odd) a.click {
+            background: url(../images/ico/star.png) left no-repeat;
+            background-size: 40px;
+            background-color: transparent !important;
+        }
+        .review_area .write_wrap p {
+            display: inline-block;
+            position: relative;
+            bottom: 43px;
+            margin-right: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+        .review_area .write_wrap p.input_area {
+        	display: block;
+        	position: static;
+        	box-sizing: border-box;
+        }
+        .review_area .write_wrap p.input_area input[type="text"] {
+        	display: inline-block;
+        	width: 300px;
+        }
+        .review_area .write_wrap input[type="text"] {
+            box-sizing: border-box;
+            display: block;
+            width: 605px;
+            height: 40px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #555;
+            border-radius: 8px; 
+            font-size: 16px;
+        }
+        .review_area .write_wrap iframe {
+            box-sizing: border-box;
+            width: 1200px;
+            height: 500px;
+            border: 2px solid #555;
+            border-radius: 8px;
+        }
+    /* review_write end */
+/* customer end */
+
+/* media query */
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+  
+  
+}
+
+@media screen and (max-width: 800px) {
+    
+    .page_wrap {
+        margin-top: 20px;
+    }
+
+    .sub_content .notice_area {
+        width: 90vw;
+    }
+    .sub_content .notice_area .minisrch_form {
+        width: 100%;
+        justify-content: center;
+    }
+    .sub_content .notice_area .minisrch_form select { 
+        box-sizing: border-box; 
+        width: 60px; 
+        padding-left: 5px;
+    }
+    .sub_content .notice_area .minisrch_form input[type="text"] { 
+        width: 200px; 
+    }
+    .sub_content .notice_area .minisrch_form input[type="button"] {
+        width: 60px; 
+    }
+    .sub_content .notice_area .notice_list {
+        font-size: 14px;
+        letter-spacing: -1px;
+    }
+    .sub_content .notice_area .notice_list th {
+        font-size: 15px !important;
+    }
+    .sub_content .notice_area .notice_list tr th:first-child {
+        display: none;
+    }
+    .sub_content .notice_area .notice_list tr td:first-child {
+        display: none;
+    }
+    .sub_content .notice_area .notice_list tr td:nth-child(2) {
+        padding-left: 5px;
+    }
+  
+    /* notice in */
+        .notice_content img {
+            width: 100%;
+        }
+    /* notice in end */
+
+    /* review */
+        .review_area .btn_wrap {
+            width: 90vw;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .review_area h3 {
+            display: none;
+        }
+        .review_area .review_list {
+            width: 90vw;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .review_area .review_list .review_content {
+            position: static;
+            width: 90vw;
+            margin-bottom: 0px;
+        }
+        .review_area .review_list .review_content .name {
+            position: static;
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 4%;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .root {
+            position: static;
+            display: inline-block;
+            margin-left: 4%;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .use_date {
+            position: static;
+            top: 25px;
+            right: 30px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .star {
+            position: static;
+            width: 200px;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 4%;
+            background: url(../images/ico/star.png) repeat-x;
+            background-size: 40px;
+            text-indent: -9999px;
+        }
+        .review_area .review_list .review_content .title {
+            position: static;
+            width: unset;
+            margin-top: 20px;
+            margin-left: 4%;
+        }
+        .review_area .review_list .review_content .write_date {
+            position: static;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 4%;
+            color: #999;
+            vertical-align: top;
+        }
+        .review_area .review_list .review_content .write_date::before {
+            content: '작성일 : ';
+            margin-right: 8px;
+            vertical-align: top;
+        }
+        .review_area .review_list .review_content .contents {
+            position: static;
+            margin-top: 20px;
+            margin-left: 4%;
+            width: 91%;
+            height: 100px;
+            overflow: auto;
+            line-height: 20px;
+            letter-spacing: -1px;
+        }
+    /* review end */
+    /* review_write */
+        .review_area {
+            width: 90vw;
+        }
+        .review_area .write_wrap form fieldset > p {
+            display: block;
+            position: static;
+            margin-top: 20px;
+        }
+        .review_area .write_wrap form fieldset .star_list  {
+            margin: 20px 0;
+        }
+        .review_area .write_wrap form fieldset #review_title {
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
+        .review_area .write_wrap form fieldset #ckditor_iframe {
+            width: 100%;
+            height: 300px;
+            margin: 0 0 20px 0;
+        }
+    /* review_write end */
+}

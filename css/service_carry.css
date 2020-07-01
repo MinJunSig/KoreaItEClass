@@ -1,0 +1,168 @@
+@import url(common.css);
+
+/* service */
+/* 보관서비스 */
+.service_carry { background: url(../images/img/sub01_visual_img03.jpg) no-repeat 9% 0; }
+.sub_content .sub_navi ul li:last-child a { font-weight: bold; background: #ffda00;}
+  /* 보관서비스 - 이용방법 */
+  .carry_info { width: 100%; height: 540px; margin-top: 0; }
+  .carry_info h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 70px 0 50px;
+  }
+  .carry_info .carry_cont { width: 100%; margin: 0 auto; }
+  .carry_info .carry_cont li {
+    border: 1px solid #ccc;
+    border-top-left-radius: 33px 33px;
+    border-bottom-right-radius: 33px 33px;
+    width: 29%;
+    height: 360px;
+    float: left;
+  }
+  .carry_info .carry_cont li:nth-child(3) { margin-left: 14px; }
+  .carry_info .carry_cont li:nth-child(even) { border: none; width: 5%; height: 100%; }
+  .carry_info .carry_cont li:nth-child(even) img { padding-left: 30px; margin-top: 150px; }
+  .carry_info .carry_cont li:last-child { float: right; }
+
+  .carry_info .carry_cont .carry_img { width: 100%; height: 50%; text-align: center; }
+  .carry_info .carry_cont .carry_img img { margin-top: 30px; }
+  .carry_info .carry_cont .carry_img_txt { position: relative; width: 100%; height: 50%; text-align: center; 
+    background-color: #F8F8F8; border-bottom-right-radius: 33px 33px; }
+  .carry_info .carry_cont .carry_img_txt h3 {
+    position: absolute; top: -14%; left: 42%;
+    width: 60px; height: 45px; padding-top: 15px;
+    background-color: #F7B618;
+    border-radius: 30px;
+    color: white;
+    font-size: 26px; font-weight: 500;
+  }
+  .carry_info .carry_cont .carry_img_txt h4 {
+    padding-top: 60px;
+    font-size: 24px; font-weight: normal;
+  }
+  .carry_info .carry_cont .carry_img_txt p {
+    padding: 10px;
+    line-height: 23px;
+  }
+  /* 보관서비스 - 이용방법 끝 */
+
+  /* 보관서비스 - 이용요금 */
+  .carry_item { width: 100%; height: 970px; margin-top: 0; }
+  .carry_item h2 {
+    text-align: center; font-size: 30px; font-weight: 600;
+    margin: 0 0 50px; border-top: 1px solid #ddd; padding-top: 70px;
+  }
+  .carry_item .item_cont { width: 100%; height: 310px; margin-bottom: 15px;}
+  .carry_item .item_cont li {
+    width: 23.9%; height: 100%;
+    float: left;
+    background-color: #F8F8F8;
+    margin-right: 15px;
+  }
+  
+  .carry_item .item_cont li:last-child { margin-right: 0; }
+  .carry_item .item_cont li img { margin: 24px 0 25px 55px; }
+  .carry_item .item_cont h3 { text-align: center; color: #000;
+    font-size: 23px; font-weight: normal; }
+  .carry_item .item_cont h4 { text-align: center; color: #555555;
+    font-size: 20px; font-weight: 300; letter-spacing: 0.2px; line-height: 40px; }
+  .carry_item .item_cont li:hover {
+   transform: translateY(-30px);
+   transition-duration: 400ms;
+   background: #F7B618;
+   box-shadow: 7px 7px 10px rgba(160, 159, 159, 0.6);
+  }
+  .carry_item .item_cont li:hover h3, .carry_item .item_cont li:hover h4 { color: white; }
+  .carry_item .carry_caution { line-height: 28px; margin-top: 40px; }
+  /* 보관서비스 - 이용요금 끝 */
+
+/* 보관서비스 끝 */
+
+/* service end */
+
+/* reservation */
+
+/* reservation end */
+
+/* event */
+
+/* event end */
+
+/* customer */
+
+/* customer end */
+
+  /*  */
+  @media screen and (max-width: 800px){
+    .popup { font-size: 50%; }
+    .popup p{ margin: 0; line-height: 1.5; } 
+    .popup p:not(:last-child){ margin-bottom: 1.5rem; }
+    .popup img{ display :block; max-width: 100%; }
+    .popup a{ text-decoration: none; }
+    .open-popup{ color: #fff; text-transform: uppercase; padding: 1rem 2rem; border: 1px solid; }
+
+
+    /* 보관서비스 */
+    body { width: 100%; }
+    #wrap { width: 100%; }
+    .sub_content_wrap { width: 100%; }
+    .sub_content_wrap .sub_title  { display: none; }
+    .white { width: 100%; }
+    .white .sub_content  { width: 100%; }
+    .white .sub_content .sub_navi { width: 100%; left: 0; top: 101px; }
+    .white .sub_content .sub_navi ul { width: 100%; height: 100%; }
+    .white .sub_content .sub_navi ul li { width: 33.35%; }
+    .white .sub_content .sub_navi ul li a { height: 100%; } 
+    .white .sub_content .sub_navi ul li:first-child a { border-radius: 0; }
+    .white .sub_content .sub_navi ul li:last-child a { border-radius: 0; }
+    /* 보관서비스 - 이용방법 */
+    .white .sub_content .sub_indicator > ul { display: none; }
+    .white .sub_content .sub_indicator {  width: 90%; padding-bottom: 1.5%; padding-top: 250px; margin: 0 auto; }
+    .white .sub_content .sub_indicator > h2 { font-size: 30px; color: black; font-weight: 600;}
+    .sub_content .clear { width: 100%; height: 100%; }
+    .sub_content .clear .carry_info { width: 95%; margin: 0 auto; height: 650px; }
+    .sub_content .clear .carry_info h2 { text-align: center; font-size: 22px; color: black; font-weight: 600; margin: 8% 0 5% 0; }
+    .carry_info .carry_cont { width: 95%; height: fit-content; }
+    .carry_info .carry_cont  li { clear: both; display: block; width: 100%; height: 35%;  margin-bottom: 5%; }
+    .carry_info .carry_cont li:nth-child(3) { margin-left: 0; }
+    .carry_info .carry_cont li:nth-child(even) { display: none; }
+
+    .carry_info .carry_cont .carry_img { height: 100%; width: 35%; float: left; overflow: hidden; }
+    .carry_info .carry_cont .carry_img img { width: 110px; height: auto; margin: 0; padding: 0 8% 0; margin-top: 40px;}
+
+    .carry_info .carry_cont .carry_img_txt { height: 100%; width: 56%; float: right; padding-left: 7%; }
+    .carry_info .carry_cont .carry_img_txt h3 {
+      padding: 8px 2px 0 0;
+      top: 11.5%; left: 11%;
+      width: 28px; height: 22px;
+      font-size: 15px;
+      border-radius: 75px;
+    }
+    .carry_info .carry_cont .carry_img_txt h4 {
+      font-size: 20px; width: fit-content;
+      margin: 0 0 0 0; color: black;
+      padding-top: 60px; letter-spacing: 0em;
+    }
+    .carry_info .carry_cont .carry_img_txt p {
+      text-align: left; font-size: 15px; 
+      color: gray; padding-bottom: 40px; padding-left: 0; 
+    }
+
+
+
+    /* 보관서비스 - 이용방법 끝 */
+    /* 보관서비스 - 이용요금 */
+    .sub_content .clear .carry_item { width: 95%; margin: 0 auto; height: 63%; margin-top: 50px; }
+    .sub_content .clear .carry_item h2 { padding-top: 7%; font-size: 30px; font-weight: 600; color: black; margin-top: 0; width: 95%; margin: 0 auto 30px;}
+    .sub_content .clear .carry_item .item_cont { width: 95%; height: 43%; margin: 0 auto; }
+    .sub_content .clear .carry_item .item_cont li img { width: 80%; height: auto; margin-left: 10.5%; }
+    .sub_content .clear .carry_item .item_cont li  { width: 48%; height: 48%; margin: 0 2% 2% 0; }
+    .sub_content .clear .carry_item .item_cont li > h3 { font-size: 22px; font-weight: bold; }
+    .sub_content .clear .carry_item .item_cont li > h4 { font-size: 16px; font-weight: 400; }
+    .clear2:after { content: ""; display: block; clear: both; }
+    .sub_content .clear .carry_item .carry_caution { width: 90%; margin: 20px 0 40px 20px; }
+    /* 보관서비스 - 이용요금 끝 */
+   }
+  

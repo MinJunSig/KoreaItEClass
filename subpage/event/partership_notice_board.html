@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제휴문의</title>
+    <link rel="stylesheet" href="../../css/partership_board.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.1.1/classic/ckeditor.js"></script>
+</head>
+<body>
+    <div class="event_board">
+        <h2 class="text_top">제휴문의</h2>
+        <div class="text_center">
+            <p><span class="text">제목</span> <input type="text"/></p>
+            <p><span class="text">이메일</span> <input type="email"/></p>
+        </div>
+        <div class="text_content">
+            <textarea id="editor"placeholder="내용을 입력해주세요"></textarea>
+        </div>
+        <p class="btn_bottom"><button type="submit">등록</button> | <button type="reset" onClick='self.close()'>창닫기</button></p>
+    </div>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+
+            
+    </script>
+</body>
+</html>
