@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <header id="header">
 <div class="header_area box_inner clear">
-    <h1><a href="#"></a></h1>
+    <h1><a href="../../mainpage/main/Main.jsp"></a></h1>
     <!-- Mobile -->
     <div id="menu-container">
         <div id="menu-wrapper">
@@ -73,7 +73,7 @@
 
                 <!-- 2번 메뉴 -->
                 <li id="menu_list2" class="menu_ck">
-                    <a href="../subpage/reservation/1.jsp" id="openit" class="openAll2">예약하기</a>
+                    <a href="../../subpage/reservation/1.jsp" id="openit" class="openAll2">예약하기</a>
                     <div class="gnb_depth gnb_depth2_2">
                         <ul class="submenu_list">
                             <li><a href="#">숙소조회</a></li>

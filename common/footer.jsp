@@ -21,13 +21,13 @@
         </div>
     </div>    
     <div class="address box_inner">
-        <p class="f_logo"><img src="/images/common/f_logo.jpg"></p>
+        <p class="f_logo"><img src="../../images/common/f_logo.jpg"></p>
         <ul class="snslink clear">
             <li><a href="https://blog.naver.com/zimcarry12?proxyReferer=http%3A%2F%2Fwww.zimcarry.net%2Fmain%2Fmain.php">blog</a></li>
             <li><a href="https://www.facebook.com/zimcarry/">facebook</a></li>
             <li><a href="https://www.instagram.com/zim_carry/">instargram</a></li>
         </ul>
          <p class="addr">주소 : 부산광역시 동구 중앙대로 206 부산역 1층 맞이방 짐캐리 <span class="gubun">  매장개인정보관리책임자 : 임영은 <br></span><span class="br_line"> 상호 : 주식회사 짐캐리 대표자 : 손진현  <span class="space0">사업자등록번호 : 394-86-01247  전화번호: 1544-8215 </span>
-         <p class="copy box_inner">Copyright © ZIM CARRY All rights reserved. <span class="copy_design">DESIGNED BY <a href="#"><img src="/images/common/f_logo_d.png"></a></span> </p>     
+         <p class="copy box_inner">Copyright © ZIM CARRY All rights reserved. <span class="copy_design">DESIGNED BY <a href="#"><img src="../../images/common/f_logo_d.png"></a></span> </p>     
     </div>
 </footer>

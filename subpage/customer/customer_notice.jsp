@@ -1,33 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="java.sql.PreparedStatement"%>
-<%@ page import="java.sql.ResultSet"%>
-<%@ page import="java.sql.DriverManager"%>
 <%	request.setCharacterEncoding("UTF-8"); %>
-<%
-	Connection conn = null;
-	PreparedStatement pstmt = null;
-	ResultSet rs = null;
-
-	String no_idx = "", no_title = "", no_writer = "", no_writedate = "", no_hit = "";
-	
-	String sql = "";
-	String dbID = "root";
-	String dbPw = "1234";
-	String url = "jdbc:mariadb://localhost:3306/zimcarry";
-	try {
-		Class.forName("org.mariadb.jdbc.Driver");
-		conn = DriverManager.getConnection(url, dbID, dbPw);
-		if (conn != null) {
-			sql = "SELECT no_idx, no_title, no_writer, no_writedate, no_hit, no_hidden FROM tb_notice";
-			pstmt = conn.prepareStatement(sql);
-			rs = pstmt.executeQuery();
-        }
-    }catch(Exception e){
-        
-    }
-%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -86,14 +59,6 @@
                                 <th>작성일</th>
                                 <th>조회</th>
                             </tr>
-                            <%
-                            	while (rs.next()) {
-                            		no_idx = rs.getString("no_idx");
-                            		no_title = rs.getString("no_title");
-                            		no_writer = rs.getString("no_writer");
-                            		no_writedate = rs.getString("no_writedate");
-                            		no_hit = rs.getString("no_hit");
-                            %>
                             <tr>
                                 <td><%=no_idx%></td>
                                 <td><a href="./customer_notice_view.jsp?no_idx=<%=no_idx%>"><%=no_title%></a></td>
@@ -101,20 +66,11 @@
                                 <td><%=no_writedate%></td>
                                 <td><%=no_hit%></td>
                             </tr>
-                            <%
-								} // while end
-							%>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-<%
-		} // if end
-	} catch (Exception e) {
-		e.printStackTrace();
-	} //try-catch end
-%>
    		<!-- content end -->
    		<!-- footer -->
    		<%@ include file="../../common/footer.jsp" %>

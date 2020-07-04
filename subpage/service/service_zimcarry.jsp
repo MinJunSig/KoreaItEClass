@@ -3,16 +3,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-<title>짐 없는 여행의 시작! 짐캐리</title>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>짐 없는 여행의 시작! 짐캐리</title>
+	<link href="../../css/service_style.css" rel="stylesheet">
+	<link href="../../images/ico_tit.ico" rel="shortcut icon" type="image/x-icon">
 </head>
-<link href="css/service_style.css" rel="stylesheet">
-<link href="images/ico_tit.ico" rel="shortcut icon" type="image/x-icon">
-<script src="./js/jquery-3.5.1.min.js"></script>
-<script src="./js/service_js.js"></script>
+
 <body>
 	<!-- header -->
-	<%@ include file="header.jsp" %>
+	<%@ include file="../../common/header.jsp" %>
 		
 	<div class="service sub_content_wrap">
 	          <div class="sub_title box_inner">
@@ -23,9 +22,9 @@
 	              <div id="sub_content" class="box_inner sub_content">
 	                  <nav class="sub_navi">
 	                      <ul>
-	                          <li><a href="#" class="on">짐캐리란</a></li>
-	                          <li><a href="#">운송서비스</a></li>
-	                          <li><a href="#">보관서비스</a></li>
+                            <li><a href="./service_zimcarry.jsp">짐캐리란</a></li>
+                            <li><a href="./service_delivery.jsp">운송서비스</a></li>
+                            <li><a href="./service_carry.jsp">보관서비스</a></li>
 	                      </ul>
 	                  </nav>
 	                  <div class="sub_indicator box_inner">
@@ -1584,13 +1583,13 @@
 	</div>
         
 	<!-- footer -->
-	<%@ include file="footer.jsp" %>
+	<%@ include file="../../common/footer.jsp" %>
 	<!-- footer end -->
 	<!-- pop-up -->
-	<%@ include file="popup.jsp" %>
+	<%@ include file="../../common/popup.jsp" %>
 	<!-- pop-up end -->
-	
-	<script src="js/jquery-3.5.1.min.js"></script>
-   	<script src="js/main.js"></script>
+	<script src="../../js/jquery-3.5.1.min.js"></script>
+	<script src="../../js/service_js.js"></script>
+   	<script src="../../js/main.js"></script>
 </body>
 </html>
